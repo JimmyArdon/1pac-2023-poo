@@ -44,9 +44,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="estructuras-control\CondicionIf.cs" />
+    <Compile Include="estructuras-control\ListarNumero03.cs" />
+    <Compile Include="estructuras-control\Listarnumeros01.cs" />
+    <Compile Include="estructuras-control\ListarNumeros02.cs" />
+    <Compile Include="estructuras-control\ListarNumeros04.cs" />
+    <Compile Include="estructuras-control\ListarNumeros05.cs" />
     <Compile Include="estructuras-control\Promedio.cs" />
+    <Compile Include="estructuras-control\Vocales.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio01.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio02.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio03.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio04.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio05.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio06.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio07.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio08.cs" />
     <Compile Include="tipo-datos\Tipos01.cs" />
     <Compile Include="tipo-datos\Tipos02.cs" />
   </ItemGroup>
