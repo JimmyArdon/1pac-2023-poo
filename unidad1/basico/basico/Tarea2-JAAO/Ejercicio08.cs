@@ -10,14 +10,15 @@ namespace basico.Tarea2_JAAO
     {
         public Ejercicio08()
         {
-            int factorial = 1;
+            Console.WriteLine("Un programa que calcule el factorial de un número dado por el usuario. (for)\r\n");
             int num;
+            int factorial = 1;
             Console.WriteLine("Ingrese el numero: ");
             num = int.Parse(Console.ReadLine());
 
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i <= num; i++)
             {
-                factorial *= i;
+                factorial = factorial * i;
                 
                 
             }

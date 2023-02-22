@@ -11,6 +11,8 @@ namespace basico.Tarea2_JAAO
     {
         public Ejercicio07()
         {
+            Console.WriteLine("Un programa que sume los números del 1 al 10 y muestre el resultado en la consola. (for)\r\n");
+
             int suma = 0;
             for (int i = 1; i < 11; i++)
             {

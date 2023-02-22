@@ -12,6 +12,9 @@ namespace basico.Tarea2_JAAO
     {
         public Ejercicio01()
         {
+            Console.WriteLine("Ejercicio: Escribir un programa que pregunte al usuario por un número " +
+                "y determine si es positivo, negativo o cero. (if)\n");
+
             int numero;
             Console.Write("Ingrese un numero: ");
             numero = int.Parse(Console.ReadLine());

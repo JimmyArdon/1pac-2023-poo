@@ -10,6 +10,8 @@ namespace basico.Tarea2_JAAO
     {
         public Ejercicio05()
         {
+            Console.WriteLine("Un programa que pregunte al usuario si quiere comprar una hamburguesa, " +
+                "una ensalada o una pizza y muestre el precio correspondiente. (switch)\r\n");
 
             Console.WriteLine("Menu de Comida");
             Console.WriteLine("------------------------\n");

@@ -10,6 +10,9 @@ namespace basico.Tarea2_JAAO
     {
         public Ejercicio04()
         {
+            Console.WriteLine("Un programa que pregunte al usuario un número del 1 al 7 " +
+                "y muestre el día de la semana correspondiente. (switch)");
+
             Console.WriteLine("Dias segun su numero.");
             Console.WriteLine("------------------------\n");
 

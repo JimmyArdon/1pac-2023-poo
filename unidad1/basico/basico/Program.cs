@@ -1,4 +1,5 @@
-﻿using basico.estructuras_control;
+﻿using basico.arreglos;
+using basico.estructuras_control;
 using basico.Tarea2_JAAO;
 using basico.tipo_datos;
 using System;
@@ -22,11 +23,11 @@ namespace basico
             //CondicionIf condicionIf= new CondicionIf();
             //Promedio promedio= new Promedio();
             //Vocales vocales= new Vocales();
-           //Listarnumeros01 listarnumeros01 = new Listarnumeros01();
+            //Listarnumeros01 listarnumeros01 = new Listarnumeros01();
             //ListarNumeros02 listarNumeros02 = new ListarNumeros02();
             //ListarNumero03 listarNumero03 = new ListarNumero03();
             //ListarNumeros04 listarNumeros04 = new ListarNumeros04();
-            ListarNumeros05 listarNumeros05 = new ListarNumeros05();   
+            //ListarNumeros05 listarNumeros05 = new ListarNumeros05();   
 
             //Ejercicio01 ejercicio01 = new Ejercicio01();
             //Ejercicio02 ejercicio02= new Ejercicio02();
@@ -36,7 +37,24 @@ namespace basico
             //Ejercicio06 ejercicio06 = new Ejercicio06();
             //Ejercicio07 ejercicio07 = new Ejercicio07();
             //Ejercicio08 ejercicio08 = new Ejercicio08();
+            //Ejercicio09 ejercicio09 = new Ejercicio09();
+            //Ejercicio10 ejercicio10 = new Ejercicio10();
+            //Ejercicio11 ejercicio11 = new Ejercicio11();
+
+            //Arreglo01 arreglo01 = new Arreglo01();
+            //Arreglo02 arreglo = new Arreglo02();
+            //Arreglos03 arreglos03 = new Arreglos03();
+            //Arreglo04 arreglo04= new Arreglo04();
+            //Arreglo05 arreglo05 = new Arreglo05();
+            //Matrizprimos practica = new Matrizprimos();
+            
+            //Matrix01 matrix01 = new Matrix01();
+            //MatrizTranspuesta matrizTranspuesta = new MatrizTranspuesta();
+            //MatrizSumFila matrizSumFila = new MatrizSumFila();
+            MatrizPares matrizPares = new MatrizPares();
             Console.ReadKey();
+
+
         }
     }
-}
+    }

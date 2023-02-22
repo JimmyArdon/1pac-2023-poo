@@ -43,6 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arreglos\Arreglo02.cs" />
+    <Compile Include="arreglos\Arreglo01.cs" />
+    <Compile Include="arreglos\Arreglo04.cs" />
+    <Compile Include="arreglos\Arreglo05.cs" />
+    <Compile Include="arreglos\Arreglos03.cs" />
+    <Compile Include="arreglos\MatrizPares.cs" />
+    <Compile Include="arreglos\Matrizprimos.cs" />
+    <Compile Include="arreglos\MatrizSumFila.cs" />
+    <Compile Include="arreglos\MatrizTranspuesta.cs" />
+    <Compile Include="arreglos\Practica.cs" />
+    <Compile Include="arreglos\prueba02.cs" />
     <Compile Include="estructuras-control\CondicionIf.cs" />
     <Compile Include="estructuras-control\ListarNumero03.cs" />
     <Compile Include="estructuras-control\Listarnumeros01.cs" />
@@ -61,6 +72,10 @@
     <Compile Include="Tarea2-JAAO\Ejercicio06.cs" />
     <Compile Include="Tarea2-JAAO\Ejercicio07.cs" />
     <Compile Include="Tarea2-JAAO\Ejercicio08.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio09.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio10.cs" />
+    <Compile Include="Tarea2-JAAO\Ejercicio11.cs" />
+    <Compile Include="Tarea2-JAAO\MenuEjercicios.cs" />
     <Compile Include="tipo-datos\Tipos01.cs" />
     <Compile Include="tipo-datos\Tipos02.cs" />
   </ItemGroup>

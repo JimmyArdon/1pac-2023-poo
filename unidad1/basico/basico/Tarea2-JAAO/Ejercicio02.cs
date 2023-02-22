@@ -11,6 +11,9 @@ namespace basico.Tarea2_JAAO
     {
         public Ejercicio02()
         {
+            Console.WriteLine("Ejercicio: Escribir un programa que pregunte al usuario por dos números" +
+                " y determine cuál es el mayor.\r\n");
+
             int num1, num2;
             Console.WriteLine("Ingrese el primer numero: ");
             num1= int.Parse(Console.ReadLine());

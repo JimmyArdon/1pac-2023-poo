@@ -10,6 +10,9 @@ namespace basico.Tarea2_JAAO
     {
         public Ejercicio03()
         {
+            Console.WriteLine("Un programa que pregunte al usuario su género " +
+                "y muestre un mensaje en la consola si es hombre o mujer. (if)\r\n");
+
             char genero;
             Console.Write("Ingrese su genero: ");
             genero = Console.ReadLine()[0];
