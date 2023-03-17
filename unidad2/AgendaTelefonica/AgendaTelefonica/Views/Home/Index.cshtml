@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@model Datos
+<div class="container">
+    
+  <h1  class="text-center">
+      Agenda Telefonica 
+  <i class="bi bi-journal-plus"></i>
+  </h1>
+<hr />
+<h5 class="justify-content-center">Bienvenido a tu Agenda telefonica Web, aqui podras agregar tus contactos y guardarlos en una lista para su pronta visualizacion</h5>
+<h1>Agregar contacto
+    <i class="bi bi-person-add"></i>
+</h1>
+<hr />
+
+<form  asp-action="Agregar">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre">
+    </div>
+    <div class="mb-3">
+        <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" name="apellidos" id="apellidos">
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label"><i class="bi bi-telephone-plus"></i>    Teléfono:</label>
+        <input  type="text" class="form-control" name="telefono" id="telefono">
+    </div>
+    <div class="mb-3">
+        <label for="tipoTelefono">Tipo de teléfono:</label>
+        <select class="form-control" name="tipoTelefono" id="tipoTelefono">
+             <option value="Casa">Telefono Fijo</option>
+            <option value="Residencia">Telefono de Residencia</option>
+            <option value="Trabajo">Telefono de Trabajo</option>
+            <option value="Celular">Celular</option>
+        </select>
+    </div class="mb-3">
+    <button class="btn btn-primary">Agregar</button>
+</form>
+
+</div>

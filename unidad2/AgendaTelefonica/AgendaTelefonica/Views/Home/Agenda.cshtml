@@ -1,0 +1,47 @@
+﻿@model List<Datos>
+@{
+    ViewData["Title"] = "Agenda";
+}
+
+
+<h2 class="text-center">Lista de contactos
+    <i class="bi bi-person-lines-fill"></i>
+</h2>
+<div class="text-center">
+
+<p><a asp-action="Agregar">Agregar contacto</a></p>
+</div>
+
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Teléfono</th>
+                <th>Tipo de teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var contacto in Model)
+            {
+                <tr>
+                    <td>@contacto.Id</td>
+                    <td>@contacto.Nombre</td>
+                    <td>@contacto.Apellidos</td>
+                    <td>@contacto.Telefono</td>
+                    <td>@contacto.TipoTelefono</td>
+                    <td>
+                        <button class="btn btn-secondary">
+                        <a asp-action="Editar" asp-route-id="@contacto.Id">Editar</a>
+                        </button>
+                        <button class="btn btn-danger">
+                        <a asp-action="Eliminar" asp-route-id="@contacto.Id">Eliminar</a>
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+

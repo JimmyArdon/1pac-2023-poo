@@ -1,0 +1,35 @@
+﻿@model Datos
+
+<div class="container">
+
+<h1>Editar contacto
+    <i class="bi bi-pencil-square"></i>
+</h1>
+<hr />
+
+<form asp-controller="Home" asp-action="Editar">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" value="@Model.Nombre">
+    </div>
+    <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos:</label>
+            <input type="text" class="form-control" name="apellidos" id="apellidos" value="@Model.Apellidos">
+    </div>
+    <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono:</label>
+            <input type="text" class="form-control" name="telefono" id="telefono" value="@Model.Telefono">
+    </div>
+    <div class="mb-3">
+            <label for="tipoTelefono" class="form-label">Tipo de teléfono:</label>
+            <select class="form-control" name="tipoTelefono" id="tipoTelefono">
+            <option value="Casa" selected="@Model.TipoTelefono == " Casa"">Telefono Fijo</option>
+            <option value="Residencia" selected="@Model.TipoTelefono == " Trabajo"">Telefono de Residencia</option>
+            <option value="Trabajo" selected="@Model.TipoTelefono == " Móvil"">Telefono de Trabajo</option>
+            <option value="Celular" selected="@Model.TipoTelefono == " Móvil"">Celular</option>
+        </select>
+    </div class="mb-3">
+    <button class="btn btn-primary">Guardar cambios</button>
+</form>
+</div>

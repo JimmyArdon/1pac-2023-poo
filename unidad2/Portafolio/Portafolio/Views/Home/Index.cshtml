@@ -2,47 +2,20 @@
 
 @{
     ViewData["Title"] = "Home Page";
-
-    //string ConvertirEnMayusculas( string valor)
-    //{
-    //    return valor.ToUpper();
-    //}
-
-    //DateTime hoy = DateTime.Now;
-
-    //var nombres = new List<string> { "Juan Perez", "Maria Mejia", "Carlos Lopez" };
-
 }
 
-
-@*Bloque de Presentacion*@
-@Html.Partial("_Presentacion")
+@*Bloque Presentación*@
+@*@Html.Partial("_Presentacion")*@
+<partial name="_Presentacion" model="Model.Proyectos" />
 
 
 @*Bloque experiencias*@
-@Html.Partial("_Experiencia")
+@*@Html.Partial("_Experiencia")*@
+<partial name="_Experiencia" model="Model.Proyectos" />
 
 
 @*Listado de Proyectos*@
-@if (Model.Proyectos is null)
-{
-    <div class="text-center" style="padding-top: 5rem;">
-        <h2> Mis Proyectos Recientes</h2>   
-        <p>Aqui puede ver algunos de mis proyectos mas recientes.</p>
-        <div class="container">
-            <div class="row">
-                @foreach (var Proyecto in Model.Proyectos)
-                {
-                    <div class="col">
-                        <div class="card h-100">
-                            <img class="card-img-top p-1" src="@Proyecto.ImagenUrl" alt="@Proyecto.Titulo"/>
-                        </div>
-                    </div>
-                }
-            </div>
-        </div>
-    </div>
-} 
+<partial name="_Proyectos" model="Model.Proyectos" />
 
 
 @*<h4> Proyectos Realizados</h4>
@@ -61,3 +34,23 @@
     </div>
 *@
     
+@*<h2>Ejemplo 1</h2>
+<div>
+    Guid Transitorio : <b style="color: red"> @Model.EjemploGuid1.Transitorio</b>
+</div>
+<div>
+    Guid Transitorio : <b style="color: green"> @Model.EjemploGuid1.Delimitado</b>
+</div>
+<div>
+    Guid Transitorio : <b style="color: blue"> @Model.EjemploGuid1.Unico</b>
+</div>
+<h2>Ejemplo 2</h2>
+<div>
+    Guid Transitorio : <b style="color: red"> @Model.EjemploGuid2.Transitorio</b>
+</div>
+<div>
+    Guid Transitorio : <b style="color: green"> @Model.EjemploGuid2.Delimitado</b>
+</div>
+<div>
+    Guid Transitorio : <b style="color: blue"> @Model.EjemploGuid2.Unico</b>
+</div>*@

@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Lista Tarea";
+}
+
+@model TareaViewModel
+
+<h2>Tareas a Realizar:</h2>
+
+<ul>
+    <li>Titulo: @Model.Titulo</li>
+    <li>Descripcion: @Model.Descripcion</li>
+    <li>Fecha de Vencimiento: @Model.FechaVencimiento</li>
+</ul>
+<div class=" row mb-3">
+   
+    <form method="post" asp-action="BorrarTareas">
+        <button type="submit" class="btn btn-danger">Borrar tareas</button>
+    </form>
+    <form method="post" asp-action="Editar">
+        <button type="submit" class="btn btn-primary">Editar</button>
+    </form>
+   
+    <a asp-action="Index">Volver al inicio</a>
+
+</div>
+
+
+
+
+
+
+           

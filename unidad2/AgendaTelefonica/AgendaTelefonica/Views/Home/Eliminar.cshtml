@@ -1,0 +1,33 @@
+﻿@model Datos
+
+<div class="container">
+
+<h1>Eliminar contacto
+    <i class="bi bi-trash"></i>
+</h1>
+<hr />
+
+<form asp-controller="Home" asp-action="Eliminar">
+    <input type="hidden" asp-for="Id" />
+    <p>¿Deseas Eliminar este contacto?</p>
+    <p>Una vez borrado no se puede recuperar..</p>
+    <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" value="@Model.Nombre" >
+    </div>
+    <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos:</label>
+            <input type="text" class="form-control" name="apellidos" id="apellidos" value="@Model.Apellidos" >
+    </div>
+    <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono:</label>
+            <input type="text" class="form-control" name="telefono" id="telefono" value="@Model.Telefono" >
+    </div>
+    <div class="mb-3">
+            <label for="tipoTelefono" class="form-label">Tipo de teléfono:</label>
+            <input type="text" class="form-control" name="tipoTelefono" id="tipoTelefono" value="@Model.TipoTelefono" >
+    </div class="mb-3">
+    <button class="btn btn-danger">Eliminar contacto</button>
+</form>
+
+</div>

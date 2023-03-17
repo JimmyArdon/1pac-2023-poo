@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+        <h1>Lista de Tareas</h1>
+        <hr />
+    <form method="post" asp-controller="Home" asp-action="ListaTarea">
+        <div class="row">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Titulo</label>
+            <input type="text" class="form-control" name="titulo" id="titulo" placeholder ="Titulo de Tarea">
+        </div>
+
+        <div class="mb-3">
+            <label for="descripcion" class="form-label">Descripcion</label>
+            <textarea class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
+        </div>
+
+            <div class="mb-3">
+            <label for="fechavencimiento" class="form-label">Fecha de Vencimiento</label>
+            <input type="date" name="fecha" id="fecha"/>
+        </div>
+
+        <div class="mb-3">
+                <button class="btn btn-primary">Enviar</button>
+        </div>
+       
+   
+        </div>
+            </form>
+   
+    </div>
+        <div class="li-container">
+            <ul>
+            </ul>
+        </div>
+        <div class="empty">
+            <p>No hay tareas pendientes</p>
+        </div>
+    

@@ -1,0 +1,32 @@
+﻿@model List<Datos>
+
+<div class="container">
+    
+    <h1>Agregar contacto</h1>
+    <hr />
+  
+<form asp-controller="Home" asp-action="Agregar">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre">
+    </div>
+    <div class="mb-3">
+        <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" name="apellidos" id="apellidos">
+    </div>
+    <div class="mb-3"> 
+        <label for="telefono"><i class="bi bi-telephone-plus"></i>     Telefono:</label>
+        <input type="text" class="form-control" name="telefono" id="telefono">
+    </div>
+    <div class="mb-3">
+        <label for="tipoTelefono">Tipo de telefono:</label>
+            <select class="form-control" name="tipoTelefono" id="tipoTelefono">
+            <option value="Casa">Telefono Fijo</option>
+            <option value="Residencia">Telefono de Residencia</option>
+            <option value="Trabajo">Telefono de Trabajo</option>
+            <option value="Celular">Celular</option>
+        </select>
+    </div class="mb-3">
+    <button class="btn btn-primary">Agregar</button>
+</form>
+</div>

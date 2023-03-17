@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Portafolio.Models;
+using Portafolio.Models.Interfaces;
+using Portafolio.Servicios;
 using System.Diagnostics;
 
 namespace Portafolio.Controllers
@@ -7,54 +9,72 @@ namespace Portafolio.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IRepositorioProyectos repositorioProyectos;
+        private readonly IConfiguration configuration;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(
+            ILogger<HomeController> logger,
+            IRepositorioProyectos repositorioProyectos,
+            IConfiguration configuration
+        )
         {
             _logger = logger;
+            this.repositorioProyectos = repositorioProyectos;
+            this.configuration = configuration;
         }
-
         public IActionResult Index()
         {
-            var proyectos = ObtenerProyectos().Take(3).ToList();
-            var modelo = new HomeIndexViewModel() { Proyectos = proyectos};
-            return View();
 
-        }
+            /*
+             * LogTrace
+             * LogDebug
+             * LogInformation
+             * LogWarning
+             * LogError
+             * LogCritical
+             */
 
-        private List<Proyecto> ObtenerProyectos()
-        {
-            return new List<Proyecto>
+            //_logger.LogTrace("Este es un mensaje de Trace");
+            //_logger.LogDebug("Este es un mensaje de Debug");
+            //_logger.LogInformation("Este es un mensaje de Informtion");
+            //_logger.LogWarning("Este es un mensaje de Warning");
+            //_logger.LogError("Este es un mensaje de Error");
+            //_logger.LogCritical("Este es un mensaje de Critical");
+
+            //var apellido = configuration.GetValue<string>("apellido");
+
+            //_logger.LogInformation("El apellido es:" + apellido);
+
+            var proyectos = repositorioProyectos.ObtenerProyectos().Take(3).ToList();
+
+            var modelo = new HomeIndexViewModel()
             {
-                new Proyecto {
-                    Titulo = "La Prensa",
-                    Descripcion = "Aplicacion de Planilla realizado en ASP.Net Core",
-                    ImagenUrl = " /images/pic-laprensa.png",
-                    Link = "http://laprensa.hn"
-                },
-                new Proyecto {
-                    Titulo = "Diunsa",
-                    Descripcion = "E-commerce desarrollado en React",
-                    ImagenUrl = " /images/pic-diunsa.png",
-                    Link = "http://diunsa.hn"
-                },
-
-                new Proyecto {
-                    Titulo = "Jetstereo",
-                    Descripcion = "Desarrollo de un sistema de cotizaciones Online en React",
-                    ImagenUrl = " /images/pic-jetstereo.png",
-                    Link = "http://jetstereo.com"
-                },
-
-                new Proyecto {
-                    Titulo = "Unah",
-                    Descripcion = "Sistema de Matricula en ASP.Net Core con base de datos Oracle",
-                    ImagenUrl = " /images/pic-unah.png",
-                    Link = "http://unah.edu.hn"
-                },
+                Proyectos = proyectos
             };
+            return View(modelo);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Proyectos()
+        {
+            var proyectos = repositorioProyectos.ObtenerProyectos();
+            return View(proyectos);
+        }
+
+        public IActionResult Contacto()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Contacto(ContactoViewModel contactoViewModel)
+        {
+             _logger.LogCritical(contactoViewModel.Nombre);
+            return RedirectToAction("Gracias");
+
+        }
+
+        public IActionResult Gracias()
         {
             return View();
         }
