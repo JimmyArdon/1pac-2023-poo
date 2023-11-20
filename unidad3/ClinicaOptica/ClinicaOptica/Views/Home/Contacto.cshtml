@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+}
+
+
+<div class="text-center">
+<h2>Óptica Buena Vista</h2>
+<h5>Óptica de confianza, servicio de calidad</h5>
+</div>
+
+<div class="container-fluid">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/css/images/lentesanimacion.jpg" class="d-block w-100" alt="imagen1">
+            </div>
+            <div class="carousel-item">
+                <img src="~/css/images/lentesanimacion1.jpg" class="d-block w-100" alt="imagen2">
+            </div>
+            <div class="carousel-item">
+                <img src="~/css/images/1298275-optica-brunet-banner.jpg" class="d-block w-100" alt="imagen2">
+            </div>
+            <div class="carousel-item">
+                <img src="~/css/images/bannerestilodevida.jpg" class="d-block w-100" alt="imagen2">
+            </div>
+            <div class="carousel-item">
+                <img src="~/css/images/optica (1).jpg" class="d-block w-100" alt="imagen2">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 bg-primary text-white py-3">
+            <h1 class="text-center fw-bold">Contactanos</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="columnas">
+            <div class="card border-primary">
+                <div class="card-body">
+                    <h3 class="card-title text-primary">Clinica Optica Buena Vista</h3>
+                    <p class="card-text">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Santa Rosa de Copán, Barrio Santa Teresa, contiguo a farmacia Siman.
+                    </p>
+                    <h4 class="card-subtitle mb-3">Horario</h4>
+                    <p class="card-text">Lunes a Viernes<br>8:00 a.m. a 5:00 p.m.</p>
+                    <p class="card-text">Sábado<br>9:00 a.m. a 1:00 p.m.</p>
+                    <h4 class="card-subtitle mb-3">Contacto</h4>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i> 2662-6464 / Tel: 9645-9865</p>
+                    <p class="card-text"><i class="bi bi-envelope-fill"></i> opticlinicabuenavista@health.com</p>
+
+                    <a asp-action="Index" class="btn btn-primary">Ir a Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="columnas">
+            <div class="card border-primary">
+                <div class="card-body">
+                    <h3 class="card-title text-primary">Clinica Optica Buena Vista</h3>
+                    <p class="card-text">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        San Pedro Sula, Boulevard del Norte, Hospital del Valle
+                    </p>
+                    <h4 class="card-subtitle mb-3">Horario</h4>
+                    <p class="card-text">Lunes a Viernes<br>8:00 a.m. a 5:00 p.m.</p>
+                    <p class="card-text">Sábado<br>9:00 a.m. a 1:00 p.m.</p>
+                    <h4 class="card-subtitle mb-3">Contacto</h4>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i>2527-8549/ 2527-9580 </p>
+                    <p class="card-text"><i class="bi bi-envelope-fill"></i> opticlinicabuenavista@health.com</p>
+
+                    <a asp-action="Index" class="btn btn-primary">Ir a Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columnas">
+
+        <div class="logo">
+            <img src="~/css/images/Buena_Vista-removebg-preview.png" alt="" />
+        </div>
+
+        <div class=" info">
+            <h5 class="justify-content-end"> Visítanos:</h5>
+            <h5> Santa Rosa de Copán</h5>
+            <h5> Barrio Santa Teresa, contiguo a farmacia Siman.</h5>
+            <h5> 2662-6464 / Tel: 9645-9865</h5>
+            <h5>San Pedro Sula</h5>
+            <h5>Boulevard del Norte, Hospital del Valle</h5>
+            <h5>2527-8549/ 2527-9580</h5>
+        </div>
+
+        <form asp-action="Cita">
+
+            <div class="masinfo">
+                <h4>Clinica especializada en tratar la salud de tus ojos</h4>
+                <button type="submit" class="btn btn-primary">Agendar Cita</button>
+            </div>
+
+        </form>
+</div>
+</div>
+
+<script>
+    var myCarousel = document.querySelector('#myCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 5000
+    })
+</script>

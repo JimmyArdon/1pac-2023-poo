@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(/js/Inicio.png);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+
+.Nombre{
+    height: 650px;
+    width: 650px;
+    margin-top: -425px;
+    margin-left: -125px;
+   
+}
+</style>
+
+
+<img class="Nombre" src="/js/NombreMaya.png" />
+
+<div class="contenedor-botones">
+  <div class="boton-inicio">
+    <form method="post" action="/Login/Acceso">
+      <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+    </form>
+  </div>
+
+  <div class="boton-inicio">
+    <form method="post" action="/Servicios/IndexS">
+      <button class="btn btn-primary" type="submit">Servicios</button>
+    </form>
+  </div>
+</div>

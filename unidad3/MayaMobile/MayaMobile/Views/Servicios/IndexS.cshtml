@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Servicios";
+}
+
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(/js/Index-01.jpeg);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+
+    .Servicio {
+        height: 250px;
+        width: 250px;
+        margin-top: -175px;
+        margin-left: 525px;
+        color: black;
+        text-align: center;
+    }
+</style>
+
+
+<div class="Servicio">
+    <h2 >NUESTROS SERVICIOS</h2>
+
+</div>
+
+<div class="botones">
+
+    <div class="boton-servicio">
+        <form method="post" action="/Servicios/Wifi">
+            <button class="wifi" type="submit"><i class="bi bi-wifi"></i></button>
+            
+        </form>
+        <h5 style="background-color: white;">Servicios de</h5>
+        <h5 style ="background-color: white;">Internet Wifi</h5>
+        
+    </div>
+
+    <div class="boton-servicio">
+        <form method="post" action="/Servicios/Telefono">
+            <button class="telefono" type="submit"><i class="bi bi-telephone-fill"></i></button>
+        </form>
+        <h5 style="background-color: white;">Servicios de</h5>
+        <h5 style="background-color: white;">Telefonia</h5>
+    </div>
+
+    <div class="boton-servicio">
+        <form method="post" action="/Servicios/Tv">
+            <button class="tv" type="submit"><i class="bi bi-tv"></i></button>
+        </form>
+        <h5 style="background-color: white;">Servicios de</h5>
+        <h5 style="background-color: white;">TV por Cable</h5>
+    </div>
+
+    <div class="boton-servicio">
+        <form method="post" action="/Servicios/Money">
+            <button class="money" type="submit"><i class="bi bi-coin"></i></button>
+        </form>
+        <h5 style="background-color: white;">Servicios de</h5>
+        <h5 style="background-color: white;">Transferencia</h5>
+        <h5 style="background-color: white;">CocoaCash</h5>
+     </div>
+    <div>
+        <a href="/Home/Index" class="btn btn-success">Volver al Inicio</a>
+
+    </div>
+</div>

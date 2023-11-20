@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddTransient<IRepositorioProyectos, RepositorioProyectos>();
-
+builder.Services.AddTransient<IServicioEmail, ServicioEmailSendGrid>();
 
 //builder.Services.AddTransient<ServicioTransitorio>(); 
 //builder.Services.AddScoped<ServicioDeLimitado>(); //tiempo de vida: siempre se va a conservar

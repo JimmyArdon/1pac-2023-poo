@@ -1,0 +1,429 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    background-color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-footer {
+    border-radius: 0 0 10px 10px;
+}
+
+.btn-primary {
+    background-color: #e9c46a;
+    border-color: #e9c46a;
+}
+
+    .btn-primary:hover {
+        background-color: #d69e2e;
+        border-color: #d69e2e;
+    }
+
+label {
+    font-weight: bold;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+.menu{
+   width: 120px;
+   margin: 0 auto;
+}
+
+.redes h5{
+   
+    font-family: Arial;
+    color: #fff;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+    background-color: paleturquoise;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: black;
+
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+.text-center{
+    padding: 50px;
+}
+
+h2 {
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif
+}
+
+h3 {
+    font-family:  'BankGothic Lt BT'
+}
+.slider{
+    width: 100%;
+    height:auto 600px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    animation : cambio 20s infinite alternate linear;
+    width: 400%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+        line-height: 1.5;
+        color: #6a6a6a;
+}
+
+ .card .contenido h3{
+        font-weight: 400;
+        margin-bottom: 15px;
+ }
+
+.card .contenido a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        margin-top: 10px;
+        color: #2fb4cc;
+        border: 1px solid #2fb4cc;
+        border-radius: 4px;
+        transition: all 400ms ease;
+        
+    }
+
+.card .contenido a:hover {
+        background: #2fb4cc;
+        color: #fff;
+}
+
+.container imagen{
+
+    align-content: center;
+}
+
+.columnas {
+
+    display: flex;
+    justify-content: left;
+
+}
+
+.logo {
+    width: 25%;
+    height: 210px;
+}
+.info {
+    justify-content: left;
+    padding: 155px;
+}
+
+.masinfo{
+    padding: 155px;
+
+}
+
+h5 {
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen {
+    width: 100%;
+    height: 410px;
+    justify-content: end;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 50px;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+}
+
+    button:hover {
+        background-color: #3e8e41;
+    }
+
+.contacto h2{
+    color: black;
+    font: 1.5rem;
+    font-family: Arial;
+}
+
+.contacto h4 {
+    color: darkblue;
+    font: 1.5rem;
+    font-family: Arial;
+}
+
+.contacto h3 {
+    color: black;
+    font: 1.5rem;
+    font-family: Arial;
+}
+.contacto h5 {
+    color: black;
+    font: 1.5rem;
+    font-family: Arial;
+}
+
+.text-center a {
+    width: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #2fb4cc;
+}
+
+.background-image-container {
+    background-image: url('/css/images/eyecarebg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:space;
+}
+
+.src {
+    
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.sps {
+ 
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+section {
+    display: flex;
+    width: 700px;
+    padding: 40px;
+    background: rgb(226, 226, 226);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+summary{
+    
+    background: #2fb4cc;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p{
+    padding: 10px;
+    background: white;
+    color: rgb(61, 61, 61);
+    font-family: Courier New, Courier, monospace;
+}
+
+.service-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+    .service-imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+@media only screen and (max-width: 600px) {
+    td, th {
+        display: block;
+        width: 100%;
+    }
+}

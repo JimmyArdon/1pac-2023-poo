@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Servicios";
+}
+
+
+
+<style>
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    nav {
+        /* Agrega estilos para la barra de navegación */
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+        padding: 20px;
+    }
+
+    /* Estilos para el título */
+    .display-4 {
+        font-size: 50;
+        color: #4CAF50; /* Verde */
+        text-shadow: 2px 2px #333;
+    }
+
+    /* Estilos para los servicios */
+    .service {
+        margin-bottom: 30px;
+        border: 2px solid #4CAF50; /* Borde verde */
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #f2f2f2; /* Fondo gris claro */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+        .service h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333; /* Texto negro */
+        }
+
+        .service p {
+            margin-bottom: 10px;
+            color: #555; /* Texto gris */
+        }
+
+        .service ul,
+        .service ol {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+    /* Estilos para el botón */
+    .btn {
+        display: inline-block;
+        background-color: #4CAF50; /* Verde */
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+        .btn:hover {
+            background-color: #45a049; /* Verde oscuro */
+        }
+
+    .btn-primary {
+        background-color: #007bff; /* Azul */
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Azul oscuro */
+        }
+
+    /* Estilos para el pie de página */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+</style>
+
+ <main>
+        <section class="services">
+            <div class="container">
+                <h2 class="display-4 mb-3 text-center">Transferencias</h2>
+                <div class="service">
+                    <h3>¿Qué son las transferencias?</h3>
+                    <p>Las transferencias son una forma segura y conveniente de mover dinero de una cuenta a otra. En el contexto de Maya Mobile, nuestras transferencias se refieren a la acción de transferir dinero desde tu cuenta bancaria a la cuenta de otro beneficiario, ya sea dentro del país o a nivel internacional.</p>
+                </div>
+                <div class="service">
+                    <h3>Tipos de transferencias</h3>
+                    <p>En Maya Mobile, ofrecemos diferentes tipos de transferencias para adaptarnos a tus necesidades:</p>
+                    <ul>
+                        <li>Transferencias nacionales: Envía dinero a cuentas bancarias dentro del país.</li>
+                        <li>Transferencias internacionales: Envía dinero a cuentas bancarias en otros países.</li>
+                        <li>Transferencias electrónicas: Realiza transferencias de dinero de manera electrónica, sin la necesidad de cheques o efectivo.</li>
+                    </ul>
+                </div>
+                <div class="service">
+                    <h3>¿Cómo realizar una transferencia?</h3>
+                    <p>Realizar una transferencia en Maya Mobile es fácil:</p>
+                    <ol>
+                        <li>Inicia sesión en tu cuenta de Maya Mobile.</li>
+                        <li>Selecciona la opción de "Transferencias" en el menú principal.</li>
+                        <li>Ingresa los detalles del beneficiario, como el número de cuenta y el monto a transferir.</li>
+                        <li>Confirma los detalles de la transferencia y envía la solicitud.</li>
+                    </ol>
+                    <p>Una vez que se haya procesado la transferencia, el dinero se reflejará en la cuenta del beneficiario en el plazo acordado.</p>
+                </div>
+            <a asp-action="IndexS" class="btn btn-success">Volver a Servicios</a>
+            </div>
+        </section>
+    </main>

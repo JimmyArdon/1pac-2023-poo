@@ -1,0 +1,211 @@
+﻿@{
+    ViewData["Title"] = "Contacto";
+}
+
+<style>
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    nav {
+        /* Agrega estilos para la barra de navegación */
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+        padding: 20px;
+    }
+
+    /* Estilos para el título */
+    .display-4 {
+        font-size: 36px;
+        color: #007bff; /* Azul */
+    }
+
+    /* Estilos para el formulario de contacto */
+    .contact-card {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+        .form-group label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group select {
+            height: 40px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+    /* Estilos para el botón */
+    .btn {
+        display: inline-block;
+        background-color: #007bff; /* Azul */
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border
+
+</style>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/css/images/lentesanimacion.jpg" class="d-block w-100" alt="imagen1">
+        </div>
+        <div class="carousel-item">
+            <img src="~/css/images/lentesanimacion1.jpg" class="d-block w-100" alt="imagen2">
+        </div>
+        <div class="carousel-item">
+            <img src="~/css/images/1298275-optica-brunet-banner.jpg" class="d-block w-100" alt="imagen2">
+        </div>
+        <div class="carousel-item">
+            <img src="~/css/images/bannerestilodevida.jpg" class="d-block w-100" alt="imagen2">
+        </div>
+        <div class="carousel-item">
+            <img src="~/css/images/optica (1).jpg" class="d-block w-100" alt="imagen2">
+        </div>
+    </div>
+</div>
+<section class="contact">
+    <div class="container">
+        <div class="contact-card">
+           
+            <h2 class="display-4 mb-3 text-center">
+                Déjanos tus datos para que te contacte nuestro asesor de
+                ventas
+            </h2>
+            <form action="/Contact/Submit" method="post">
+                <div class="form-group">
+                    <label for="fullName">Nombre y apellido</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Celular</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="municipality">Municipio</label>
+                    <select id="municipality" name="municipality">
+                        <option value="Tegucigalpa">Tegucigalpa</option>
+                        <!-- (rest of the municipality options) -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<div class="text-center">
+    <h2>Óptica Buena Vista</h2>
+    <h5>Óptica de confianza, servicio de calidad</h5>
+</div>
+
+<div class="container-fluid">
+    
+    <div class="row">
+        <div class="col-12 bg-primary text-white py-3">
+            <h1 class="text-center fw-bold">Contactanos</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="columnas">
+            <div class="card border-primary">
+                <div class="card-body">
+                    <h3 class="card-title text-primary">Clinica Optica Buena Vista</h3>
+                    <p class="card-text">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Santa Rosa de Copán, Barrio Santa Teresa, contiguo a farmacia Siman.
+                    </p>
+                    <h4 class="card-subtitle mb-3">Horario</h4>
+                    <p class="card-text">Lunes a Viernes<br>8:00 a.m. a 5:00 p.m.</p>
+                    <p class="card-text">Sábado<br>9:00 a.m. a 1:00 p.m.</p>
+                    <h4 class="card-subtitle mb-3">Contacto</h4>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i> 2662-6464 / Tel: 9645-9865</p>
+                    <p class="card-text"><i class="bi bi-envelope-fill"></i> opticlinicabuenavista@health.com</p>
+
+                    <a asp-action="Index" class="btn btn-primary">Ir a Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="columnas">
+            <div class="card border-primary">
+                <div class="card-body">
+                    <h3 class="card-title text-primary">Clinica Optica Buena Vista</h3>
+                    <p class="card-text">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        San Pedro Sula, Boulevard del Norte, Hospital del Valle
+                    </p>
+                    <h4 class="card-subtitle mb-3">Horario</h4>
+                    <p class="card-text">Lunes a Viernes<br>8:00 a.m. a 5:00 p.m.</p>
+                    <p class="card-text">Sábado<br>9:00 a.m. a 1:00 p.m.</p>
+                    <h4 class="card-subtitle mb-3">Contacto</h4>
+                    <p class="card-text"><i class="bi bi-telephone-fill"></i>2527-8549/ 2527-9580 </p>
+                    <p class="card-text"><i class="bi bi-envelope-fill"></i> opticlinicabuenavista@health.com</p>
+
+                    <a asp-action="Index" class="btn btn-primary">Ir a Inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var myCarousel = document.querySelector('#myCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 5000
+    })
+</script>

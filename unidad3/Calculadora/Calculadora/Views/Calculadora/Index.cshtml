@@ -1,0 +1,92 @@
+﻿@model CalculadoraViewModel
+@{
+    ViewData["Title"] = "Calculadora";
+}
+
+<h2>Calculadora</h2>
+
+
+<form action="/Calculadora/Calcular" method="post">
+    
+
+    <div>
+        <input type="text" id="expresion" name="expresion"  value="@Model" />
+
+        <div>
+            <button type="button" onclick="AgregarCaracter('+')">+</button>
+            <button type="button" onclick="AgregarCaracter('-')">-</button>
+            <button type="button" onclick="AgregarCaracter('*')">*</button>
+            <button type="button" onclick="AgregarCaracter('/')">/</button>
+
+        </div>
+
+        <div>
+            <button type="button" onclick="AgregarCaracter('7')">7</button>
+            <button type="button" onclick="AgregarCaracter('8')">8</button>
+            <button type="button" onclick="AgregarCaracter('9')">9</button>
+           
+
+        </div>
+
+        <div>
+            <button type="button" onclick="AgregarCaracter('4')">4</button>
+            <button type="button" onclick="AgregarCaracter('5')">5</button>
+            <button type="button" onclick="AgregarCaracter('6')">6</button>
+            
+        </div>
+
+        <div>
+            <button type="button" onclick="AgregarCaracter('1')">1</button>
+            <button type="button" onclick="AgregarCaracter('2')">2</button>
+            <button type="button" onclick="AgregarCaracter('3')">3</button>
+            <button type="button" onclick="insertarEspacio()">Agregar espacio</button>
+        </div>
+
+        <div>
+            <button type="button" onclick="Limpiar()">Limpiar</button>
+            <button type="button" onclick="AgregarCaracter('0')">0</button>
+            <button type="button" onclick="Borrar()">Borrar</button>
+        </div>
+
+        <input type="submit" value="Calcular" />
+    </div>
+
+</form>
+@if (!string.IsNullOrEmpty(ViewBag.Error))
+{
+    <div class="error">@ViewBag.Error</div>
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.NotacionPolaca))
+{
+    <div>Notación polaca inversa: <input type="text" value="@ViewBag.NotacionPolaca" readonly /></div>
+}
+
+@if (ViewBag.Resultado != null)
+{
+    <div>Resultado: <input type="text" value="@ViewBag.Resultado" readonly /></div>
+}
+
+@section Scripts {
+    <script>
+        function AgregarCaracter(caracter) {
+            var expresion = document.getElementById("expresion");
+            expresion.value += caracter;
+        }
+
+        function Limpiar() {
+            var expresion = document.getElementById("expresion");
+            expresion.value = "";
+        }
+
+        function Borrar() {
+            var expresion = document.getElementById("expresion");
+            expresion.value = expresion.value.slice(0, -1);
+        }
+
+        function insertarEspacio() {
+        var expresionInput = document.getElementById("expresion");
+        expresionInput.value += " ";
+    }
+    </script>
+}

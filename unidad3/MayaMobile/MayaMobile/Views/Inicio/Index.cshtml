@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Sencillo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        #topbar1 {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+        #topbar2 {
+            background-color: #8B7355;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 60px; 
+            left: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+        #sidebar {
+            width: 250px;
+            background-color: #8B7355;
+           
+            position: fixed;
+            top: 120px; 
+            left: 0;
+            bottom: 0; 
+            z-index: 1;
+        }
+
+        #content {
+            margin-left: 250px;
+            padding: 20px;
+            padding-top: 180px; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            ul li {
+                padding: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                
+            }
+
+                ul li:hover {
+                    background-color: #A68663;
+                }
+
+            ul a {
+                color: black; 
+                text-decoration: none; 
+                display: block; 
+                padding: 5px; 
+            }
+
+     
+        .submenu {
+            display: none;
+            padding-left: 20px;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+        }
+
+        .has-submenu:hover .submenu {
+            display: block;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(/js/Inicio.png);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div id="topbar1">
+        <div>
+            <img src="ruta-del-logo.png" alt="Logo" style="width: 40px; height: 40px;">
+            <span>Nombre de la Empresa</span>
+        </div>
+        <div>
+            <span>Usuario: NombreUsuario</span>
+            <a href="/Login/Acceso">Cerrar Sesión</a>
+        </div>
+    </div>
+    <div id="topbar2">
+        <span>Bienvenido, NombreUsuario</span>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li class="has-submenu">
+                Inicio
+                <ul class="submenu">
+                    <li><a href="facturacion.html">Facturación</a></li>
+                    <li><a href="historial-pago.html">Historial de Pago</a></li>
+                    <li><a href="agregar-tarjetas.html">Agregar Tarjetas</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                Servicios
+                <ul class="submenu">
+                    <li><a asp-action="">Plan Activo</a></li>
+                    <li><a asp-action="">Compra Plan TV</a></li>
+                    <li><a asp-action="">Compar Plan Wifi</a></li>
+                    <li><a asp-action="">Compar Plan Teléfono</a></li>
+                    <li><a asp-action="">Coco a Cash</a></li>
+                </ul>
+            </li>
+            <li><a href="configuracion.html">Configuración</a></li>
+            <li><a href="ayuda.html">Ayuda</a></li>
+        </ul>
+    </div>
+
+
+    <div id="content">
+        <h1>Contenido del Dashboard</h1>
+        <p>Bienvenido al dashboard sencillo.</p>
+    </div>
+</body>
+</html>

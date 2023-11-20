@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Servicios";
+}
+
+
+
+<style>
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    nav {
+        /* Agrega estilos para la barra de navegación */
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+        padding: 20px;
+    }
+
+    /* Estilos para el título */
+    .display-4 {
+        font-size: 36px;
+    }
+
+    /* Estilos para las tarjetas de servicios */
+    .card {
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card .contenido {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+    .price {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    /* Estilos para el botón */
+    .btn {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-primary {
+        background-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    /* Estilos para el pie de página */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+</style>
+
+<main>
+    <section class="services">
+        <div class="container">
+        <div class="Servicios"
+        <div class="row">
+            <div class="col-12 bg-success text-white py-3">
+                <h1 class="text-center fw-bold">Servicios de Tv </h1>
+            </div>
+        </div>
+        </div>
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/tv_basico.jpg" alt="TV Básico">
+                    <div class="contenido">
+                        <h3>TV Básico</h3>
+                        <p>50+ canales con una variedad de programas.</p>
+                        <p>Guía de programación incluida.</p>
+                        <div class="price">$20/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/tv_avanzado.jpg" alt="TV Avanzado">
+                    <div class="contenido">
+                        <h3>TV Avanzado</h3>
+                        <p>100+ canales, incluyendo deportes y películas.</p>
+                        <p>Guía de programación y funciones avanzadas.</p>
+                        <div class="price">$40/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/tv_premium.jpg" alt="TV Premium">
+                    <div class="contenido">
+                        <h3>TV Premium</h3>
+                        <p>200+ canales, con acceso a contenido exclusivo.</p>
+                        <p>Grabación y pausa en vivo incluidas.</p>
+                        <div class="price">$60/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/tv_hd.jpg" alt="TV HD">
+                    <div class="contenido">
+                        <h3>TV HD</h3>
+                        <p>100+ canales en alta definición.</p>
+                        <p>Guía de programación y funciones avanzadas.</p>
+                        <div class="price">$50/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+            <hr />
+            <a asp-action="IndexS" class="btn btn-success">Volver a Servicios</a>
+        </div>
+    </section>
+</main>

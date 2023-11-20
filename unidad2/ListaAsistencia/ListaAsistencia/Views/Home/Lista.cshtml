@@ -1,0 +1,47 @@
+﻿@model List<Persona>
+@{
+    ViewData["Title"] = "Lista";
+}
+
+
+<h2 class="text-center">
+    Lista de Alumnos
+    <i class="bi bi-person-lines-fill"></i>
+</h2>
+<div class="text-center">
+    <button class="btn">
+
+    <p><a asp-action="Agregar">Agregar Alumno</a></p>
+        
+    </button>
+    <button class="btn">
+
+     <p><a asp-action="Asistencia">Agregar Asistencia</a></p>
+    </button>
+</div>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Numero de Cuenta</th>
+            <th>Asistencia</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contacto in Model)
+        {
+            <tr>
+                <td>@contacto.Id</td>
+                <td>@contacto.Nombre</td>
+                <td>@contacto.Apellidos</td>
+                <td>@contacto.NumeroCuenta</td>
+                <td>@contacto.Asistencia</td>
+
+            </tr>
+        }
+    </tbody>
+</table>

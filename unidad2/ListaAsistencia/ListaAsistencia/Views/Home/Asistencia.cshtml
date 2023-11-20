@@ -1,0 +1,50 @@
+﻿@model List<Persona>
+@{
+    ViewData["Title"] = "Asistencia";
+}
+
+
+<h2 class="text-center">
+    Asistencia de Alumnos
+    <i class="bi bi-list-ol"></i>
+</h2>
+
+<form class="text-center mb-3" asp-action="Resumen" method="post">
+<button class="btn btn-primary">Resumen</button>
+</form>
+
+<table class="table text-center mb-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Numero de Cuenta</th>
+            <th>Asistencia</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contacto in Model)
+        {
+            <tr>
+                <td>@contacto.Id</td>
+                <td>@contacto.Nombre</td>
+                <td>@contacto.Apellidos</td>
+                <td>@contacto.NumeroCuenta</td>
+                
+                <td>
+                     <div class="mb-3">
+                         <label class="form-check-label">Presente</label>
+                         <input type="checkbox" class="form-check-input"/>
+                     </div>
+                     <div class="mb-3">
+                         <label class="form-check-label">Ausente</label>
+                         <input type="checkbox" class="form-check-input" />
+                     </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+        

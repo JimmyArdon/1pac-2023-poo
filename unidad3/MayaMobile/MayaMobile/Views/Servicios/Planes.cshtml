@@ -1,0 +1,191 @@
+﻿@{
+    ViewData["Title"] = "Planes";
+}
+<style>
+
+   /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    /* Agrega estilos para la barra de navegación */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para el título */
+.display-4 {
+    font-size: 36px;
+}
+
+/* Estilos para las tarjetas de planes */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .contenido {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+</style>
+<main>
+    <section class="services">
+        <div class="container">
+            <h2 class="display-4 mb-3 text-center">Nuestros Planes</h2>
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/plan_basico.jpg" alt="Plan Básico">
+                    <div class="contenido">
+                        <h3>Plan Básico</h3>
+                        <p>Velocidad: 20 Mbps</p>
+                        <p>Ideal para uso ligero, navegación en redes sociales y correos electrónicos.</p>
+                        <div class="price">$30/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/plan_intermedio.jpg" alt="Plan Intermedio">
+                    <div class="contenido">
+                        <h3>Plan Intermedio</h3>
+                        <p>Velocidad: 50 Mbps</p>
+                        <p>Perfecto para streaming de videos HD y uso en múltiples dispositivos.</p>
+                        <div class="price">$50/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/plan_avanzado.jpg" alt="Plan Avanzado">
+                    <div class="contenido">
+                        <h3>Plan Avanzado</h3>
+                        <p>Velocidad: 100 Mbps</p>
+                        <p>Para usuarios intensivos, juegos en línea y transferencia de archivos grandes.</p>
+                        <div class="price">$80/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/plan_empresarial.jpg" alt="Plan Empresarial">
+                    <div class="contenido">
+                        <h3>Plan Empresarial</h3>
+                        <p>Velocidad: 250 Mbps</p>
+                        <p>Diseñado para empresas y negocios con alta demanda de conexión.</p>
+                        <div class="price">$120/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/plan_premium.jpg" alt="Plan Premium">
+                    <div class="contenido">
+                        <h3>Plan Premium</h3>
+                        <p>Velocidad: 500 Mbps</p>
+                        <p>Para usuarios exigentes, streaming 4K, juegos en línea y transferencias rápidas.</p>
+                        <div class="price">$150/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/plan_ultra.jpg" alt="Plan Ultra">
+                    <div class="contenido">
+                        <h3>Plan Ultra</h3>
+                        <p>Velocidad: 1 Gbps</p>
+                        <p>La máxima velocidad para usuarios y empresas con alta demanda de conexión.</p>
+                        <div class="price">$250/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+            <a asp-action="Wifi" class="btn btn-success">Volver a Servicios</a>
+        </div>
+       
+    </section>
+</main>

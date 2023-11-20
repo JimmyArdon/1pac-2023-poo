@@ -1,0 +1,65 @@
+﻿@model List<Persona>
+@{
+    ViewData["Title"] = "Asistencia";
+}
+<h2 class="text-center">
+    Resumen de Asistencia
+    <i class="bi bi-clipboard-data"></i>
+</h2>
+<h5>A continuacion se mostrabra tablas de acuerdo a los estudiantes que asistieron y los ausentes</h5>
+<hr />
+
+<h3 class="text-center">
+    Presentes
+    <i class="bi bi-check-circle-fill"></i>
+</h3>
+
+<table class="table text-center mb-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Numero de Cuenta</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contacto in ViewBag.Presentes)
+        {
+            <tr>
+                <td>@contacto.Id</td>
+                <td>@contacto.Nombre</td>
+                <td>@contacto.Apellidos</td>
+                <td>@contacto.NumeroCuenta</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3 class="text-center">
+    Ausentes
+    <i class="bi bi-x-circle-fill"></i>
+</h3>
+
+<table class="table text-center mb-3">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Numero de Cuenta</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contacto in ViewBag.Ausentes)
+        {
+            <tr>
+                <td>@contacto.Id</td>
+                <td>@contacto.Nombre</td>
+                <td>@contacto.Apellidos</td>
+                <td>@contacto.NumeroCuenta</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

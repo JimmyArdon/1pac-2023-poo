@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Servicios de Wifi";
+}
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url(/js/Index-01.jpeg);
+        background-size: cover;
+        background-position: center;
+        font-family: sans-serif;
+    }
+
+</style>
+
+
+
+    <div class="Servicios" style="margin-top: -175px;">
+        <div class="row">
+            <div class="col-12 bg-success text-white py-3">
+                <h1 class="text-center fw-bold">Servicios de Internet</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <div class="accordion" id="serviciosAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                Servicio de Internet Wifi
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#serviciosAccordion">
+                            <div class="accordion-body">
+                                Ofrecemos conexión a Internet Wifi de alta velocidad y confiable para satisfacer las necesidades de nuestros clientes y mejorar su experiencia en línea. Nuestra red de última generación brinda cobertura en toda la ciudad, garantizando una conexión estable y rápida en cualquier momento.
+                                <div class="service-imagen">
+                                    
+                                    <img src="~/css/images/serviciositem1.jpg" alt="Servicio de Internet Wifi - Maya Mobile" />
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Soporte Técnico 24/7
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#serviciosAccordion">
+                            <div class="accordion-body">
+                                Nuestro equipo de expertos en soporte técnico está disponible las 24 horas del día, los 7 días de la semana, para atender cualquier inconveniente que puedas tener con tu conexión. Brindamos asistencia rápida y eficiente para garantizar que tu experiencia de navegación sea siempre óptima.
+                                <div class="service-imagen">
+                                    <img src="~/css/images/serviciositem2.jpg" alt="Soporte Técnico 24/7 - Maya Mobile" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Planes Flexibles
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#serviciosAccordion">
+                            <div class="accordion-body">
+                                Entendemos que cada cliente tiene necesidades diferentes, por lo que ofrecemos una variedad de planes flexibles que se ajustan a tu consumo de datos y presupuesto. Puedes elegir entre planes mensuales o por tiempo limitado según tus preferencias.
+                                <div class="service-imagen">
+                                <a asp-action="Planes"> Planes</a>
+                                    <img src="~/css/images/serviciositem3.jpg" alt="Planes Flexibles - Maya Mobile" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            Amplia Cobertura
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#serviciosAccordion">
+                        <div class="accordion-body">
+                            Nuestra red de Internet Wifi está diseñada para brindar una amplia cobertura en toda la ciudad. Gracias a nuestras torres de señal estratégicamente ubicadas, garantizamos una conexión estable incluso en áreas remotas. Olvídate de las zonas sin señal y disfruta de una experiencia de navegación sin interrupciones.
+                            <div class="service-imagen">
+                                <img src="~/css/images/serviciositem4.jpg" alt="Amplia Cobertura - Maya Mobile" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            Seguridad Avanzada
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#serviciosAccordion">
+                        <div class="accordion-body">
+                            La seguridad de nuestros clientes es nuestra prioridad. Por eso, hemos implementado medidas de seguridad avanzadas en nuestra red para proteger tus datos y privacidad. Navega por la web con total tranquilidad sabiendo que tu información está segura con nosotros.
+                            <div class="service-imagen">
+                                <img src="~/css/images/serviciositem5.jpg" alt="Seguridad Avanzada - Maya Mobile" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <hr />
+                <a asp-action="IndexS" class="btn btn-success">Volver a Servicios</a>
+            </div>
+        </div>
+    </div>

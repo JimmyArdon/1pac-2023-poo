@@ -1,0 +1,232 @@
+﻿@model Usuario
+
+@{
+    ViewData["Title"] = "Cita";
+}
+<div class="text-center ">
+<h1>Cita online</h1>
+<a href="Index">Inicio</a>
+</div>
+
+<div class="row justify-content-center mt-5">
+    <div class="columnas">
+        <div class="card border-primary">
+            <div class="card-body">
+                <h3 class="card-title text-primary">Clinica Optica Buena Vista Santa Rosa de Copán.</h3>
+                <p class="card-text">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Santa Rosa de Copán, Barrio Santa Teresa, contiguo a farmacia Siman.
+                </p>
+                <h4 class="card-subtitle mb-3">Horario</h4>
+                <p class="card-text">Lunes a Viernes<br>8:00 a.m. a 5:00 p.m.</p>
+                <p class="card-text">Sábado<br>9:00 a.m. a 1:00 p.m.</p>
+                <h4 class="card-subtitle mb-3">Contacto</h4>
+                <p class="card-text"><i class="bi bi-telephone-fill"></i> 2662-6464 / Tel: 9645-9865</p>
+                <p class="card-text"><i class="bi bi-envelope-fill"></i> opticlinicabuenavista@health.com</p>
+                <table>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Especialidad</th>
+                        <th>Horario</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. Juan Pérez</td>
+                        <td> Oftalmología pediátrica y estrabismo</td>
+                        <td>Lunes a Jueves, 2:00 p.m a 5:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Ana Gómez</td>
+                        <td>Oftalmología General</td>
+                        <td>Lunes a Viernes: 10 a.m a 5 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Pedro Rodríguez</td>
+                        <td>Cornea, catarata, cirugía refractiva y ojo seco</td>
+                        <td> Lunes a Viernes: 10 a.m a 5 p.m</td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            </div>
+            </div>
+
+                <div class="row justify-content-center mt-5">
+                    <div class="columnas">
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <h3 class="card-title text-primary">Clinica Optica Buena Vista</h3>
+                                <p class="card-text">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    San Pedro Sula, Boulevard del Norte, Hospital del Valle
+                                </p>
+                                <h4 class="card-subtitle mb-3">Horario</h4>
+                                <p class="card-text">Lunes a Viernes<br>8:00 a.m. a 5:00 p.m.</p>
+                                <p class="card-text">Sábado<br>9:00 a.m. a 1:00 p.m.</p>
+                                <h4 class="card-subtitle mb-3">Contacto</h4>
+                                <p class="card-text"><i class="bi bi-telephone-fill"></i>2527-8549/ 2527-9580 </p>
+                                <p class="card-text"><i class="bi bi-envelope-fill"></i> opticlinicabuenavista@health.com</p>
+                                <table>
+                                    <tr>
+                                        <th>Doctor</th>
+                                        <th>Especialidad</th>
+                                        <th>Horario</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Carlos López</td>
+                                        <td>Contactología</td>
+                                        <td>Lunes a Martes, 1:00 p.m a 5:00 p.m</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>Dra. Laura Martínez</td>
+                                        <td>Optometría Pediátrica</td>
+                                        <td>Lunes a Miércoles, 10:00 a.m a 5:00 pm</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>Dr. José Ramírez</td>
+                                        <td>Geriátrica</td>
+                                        <td> Lunes a Viernes, 9:00 a.m a 4:00 pm</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Dra. María Hernández</td>
+                                        <td>Terapia Visual</td>
+                                        <td>Lunes a Martes, 2:00 p.m a 5:00 p.m </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dr. Andrés Sánchez</td>
+                                        <td>Glaucoma</td>
+                                        <td>Lunes a Jueves, 2:00 p.m a 5:00 p.m</td>
+                                    </tr>
+                                </table>
+                
+
+                <a asp-action="Index" class="btn btn-primary">Ir a Inicio</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="formulario">
+    <div class="instrucciones text-center">
+        <h6>
+            Para solicitar una cita, 
+        </h6>
+        <h6>complete el siguiente formulario y nos pondremos en contacto</h6>
+        <h6>con usted vía teléfono para confirmar su reservación.</h6>
+
+        <div>
+            <form asp-action="Cita" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Nombre"></label>
+                    <input asp-for="Nombre" class="form-control" placeholder="Nombre" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Apellido"></label>
+                    <input asp-for="Apellido" class="form-control" placeholder="Apellido" />
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Edad" ></label>
+                    <input asp-for="Edad" class="form-control" placeholder="Edad" />
+                    <span asp-validation-for="Edad" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Email" ></label>
+                    <input asp-for="Email" class="form-control" placeholder="Correo Electonico" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                 <div class="mb-3">
+                    <label class="form-label" asp-for="NumeroTelefono" ></label>
+                    <input asp-for="NumeroTelefono" class="form-control" placeholder="Numero de Telefono" />
+                    <span asp-validation-for="NumeroTelefono" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="FechaCita"></label>
+                    <input asp-for="FechaCita" class="form-control"/>
+                    <span asp-validation-for="FechaCita" class="text-danger"></span>
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Clinica"></label>
+                    <input asp-for="Clinica" class="form-control" placeholder="SRC/SPS" />
+                    <span asp-validation-for="Clinica" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="Doctor"></label>
+                    <input asp-for="Doctor" class="form-control" placeholder="Nombre del Doctor" />
+                    <span asp-validation-for="Doctor" class="text-danger"></span>
+                </div>
+
+                    
+                        
+
+           
+            <div class="py-5">
+
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+            
+               
+        </form>
+
+        </div>
+    </div>
+       
+
+     <div class="contacto">
+        <img class="imagen" src="~/css/images/Buena_Vista-removebg-preview.png"/> 
+    
+        <h4>Primer clinica especializada en la salud visual en Honduras</h4>
+        <h3>Santa Rosa de Copán</h3>
+        <h5>Barrio Santa Teresa, contiguo a farmacia Siman.</h5>
+        <h2>Lunes a Viernes</h2>
+        <h5>8:00 a.m. a 5:00 p.m</h5>
+        <h2>Sábado</h2>
+        <h5>8:00 a.m. a 12:00 p.m</h5>
+        <h2>Llámanos:</h2>
+        <h5>2662-6464 / Tel: 9645-9865</h5>
+    </div>
+</div>
+
+<div class="columnas">
+
+    <div class="logo">
+        <img src="~/css/images/Buena_Vista-removebg-preview.png" alt="" />
+    </div>
+
+    <div class=" info">
+        <h5 class="justify-content-end"> Visítanos:</h5>
+        <h5> Santa Rosa de Copán</h5>
+        <h5> Barrio Santa Teresa, contiguo a farmacia Siman. </h5>
+        <h5> 2662-6464 / Tel: 9645-9865</h5>
+        <h5>San Pedro Sula</h5>
+        <h5>Boulevard del Norte, Hospital del Valle</h5>
+        <h5>2527-8549/ 2527-9580</h5>
+    </div>
+
+    <form >
+
+        <div class="masinfo">
+            <h4>Clinica especializada en tratar la salud de tus ojos</h4>
+            <button class="btn btn-primary" asp-action="Cita">Agendar Cita</button>
+        </div>
+    </form>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+ 

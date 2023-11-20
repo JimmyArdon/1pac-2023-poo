@@ -1,0 +1,332 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos del header */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+    header h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+/* Estilos de las secciones */
+section {
+    padding: 40px;
+}
+
+    section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    section p {
+        margin-bottom: 20px;
+    }
+
+    section ul li {
+        display: inline-block;
+        width: 30%;
+        margin-right: 20px;
+        vertical-align: top;
+        text-align: center;
+    }
+
+        section ul li img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
+
+    section table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    section th, section td {
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+/* Estilos del formulario */
+form label, form input, form textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+    form input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilos del carrusel de guacamayas */
+.carousel-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+    .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: carouselAnimation 10s infinite;
+    }
+
+
+/* Estilos del botón de inicio de sesión */
+.login-button {
+    margin-left: auto;
+}
+
+    .login-button a {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+        .login-button a:hover {
+            background-color: #555;
+        }
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #ffffff;
+}
+
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.user_card-registro {
+    height: 500px;
+    width: 450px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #f39c12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.brand_logo_container {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    top: -75px;
+    border-radius: 50%;
+    background: #60a3bc;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.form_container {
+    margin-top: 100px;
+}
+
+.login_btn {
+    width: 100%;
+    background: #c0392b !important;
+    color: white !important;
+}
+
+    .login_btn:focus {
+        box-shadow: none !important;
+        outline: 0px !important;
+    }
+
+.login_container {
+    padding: 0 2rem;
+}
+
+.input-group-text {
+    background: #c0392b !important;
+    color: white !important;
+    border: 0 !important;
+    border-radius: 0.25rem 0 0 0.25rem !important;
+}
+
+.input_user,
+.input_pass:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #c0392b !important;
+}
+
+.container {
+    margin-top: 200px;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated {
+    animation: buttonAnimation 1s ease-in-out;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    background-color: transparent;
+    margin-top: -200px;
+    margin-left: -125px;
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.boton-inicio {
+
+   border: 0px;
+   padding: 10px;
+   color: #000;
+   margin-right: 10px;
+
+}
+
+
+.boton-servicio {
+    border: 0px;
+    padding: 15px 60px;
+    font-size: 50px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    margin-top: -200px;
+   
+}
+.button-wifi {
+    color: none;
+    height: 850px;
+}
+
+.button-telefono {
+    height: 850px;
+    color: none;
+}
+
+.button-tv {
+    height: 850px;
+    color: none;
+   
+}
+.button-money {
+    height: 850px;
+   
+}
+
+
+
+
+
+
+

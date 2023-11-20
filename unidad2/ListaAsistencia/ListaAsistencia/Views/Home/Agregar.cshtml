@@ -1,0 +1,38 @@
+﻿@model List<Persona>
+
+<div class="container">
+
+  <h1  class="text-center">
+  <i class="bi bi-journal-plus"></i>
+  </h1>
+<hr />
+<h1>Agregar Alumno
+
+</h1>
+<hr />
+
+    <form asp-controller="Home" asp-action="Agregar">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre">
+    </div>
+    <div class="mb-3">
+        <label for="apellidos">Apellidos:</label>
+            <input type="text" class="form-control" name="apellidos" id="apellidos">
+    </div>
+    <div class="mb-3">
+        <label for="telefono" class="form-label">Numero de Cuenta:</label>
+        <input  type="text" class="form-control" name="numeroCuenta" id="numeroCuenta">
+    </div>
+     <div class="mb-3">
+                  <label class="form-check-label">Presente</label>
+            <input type="checkbox" class="form-check-input" name="asistencia" id="asistencia" value="Presente" />
+     </div>
+     <div class="mb-3">
+                  <label class="form-check-label">Ausente</label>
+                  <input type="checkbox" class="form-check-input" name="asistencia" id="asistencia" value="Ausente" />
+      </div>
+    <button class="btn btn-primary">Agregar</button>
+</form>
+
+</div>

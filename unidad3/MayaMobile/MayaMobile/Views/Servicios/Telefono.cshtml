@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Servicios de Telefonia";
+}
+
+
+
+<style>
+   
+    /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    /* Agrega estilos para la barra de navegación */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para el título */
+.display-4 {
+    font-size: 36px;
+}
+
+/* Estilos para las tarjetas de servicios */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card .contenido {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+</style>
+
+<main>
+    <section class="services">
+        <div class="Servicios" ">
+            <div class="row">
+                <div class="col-12 bg-success text-white py-3">
+                    <h1 class="text-center fw-bold">Servicio de Telefonia</h1>
+                </div>
+             </div>
+         </div>
+        <div class="container">
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/telefono_residencial.jpg" alt="Teléfono Residencial">
+                    <div class="contenido">
+                        <h3>Teléfono Residencial</h3>
+                        <p>Llamadas ilimitadas a números fijos dentro del país.</p>
+                        <p>Llamadas a números móviles a tarifas especiales.</p>
+                        <div class="price">$15/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/telefono_movil.jpg" alt="Teléfono Móvil">
+                    <div class="contenido">
+                        <h3>Plan de Teléfono Móvil</h3>
+                        <p>Llamadas y mensajes ilimitados dentro del país.</p>
+                        <p>Internet móvil con diferentes capacidades de datos.</p>
+                        <div class="price">$40/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/telefono_internacional.jpg" alt="Teléfono Internacional">
+                    <div class="contenido">
+                        <h3>Plan Internacional</h3>
+                        <p>Llamadas internacionales a tarifas especiales.</p>
+                        <p>Mensajes internacionales a diversos destinos.</p>
+                        <div class="price">$25/mes</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+
+            <div class="card mb-3">
+                <figure>
+                    <img src="~/css/images/telefono_empresarial.jpg" alt="Teléfono Empresarial">
+                    <div class="contenido">
+                        <h3>Teléfono Empresarial</h3>
+                        <p>Planes personalizados para necesidades empresariales.</p>
+                        <p>Llamadas, mensajes y datos adaptados a tu negocio.</p>
+                        <div class="price">Consulta</div>
+                        <a href="#" class="btn btn-primary">Contratar</a>
+                    </div>
+                </figure>
+            </div>
+            <a asp-action="IndexS" class="btn btn-success">Volver a Servicios</a>
+        </div>
+    </section>
+</main>
